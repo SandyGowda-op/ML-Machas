@@ -23,16 +23,9 @@ The goal of this project is to:
 ## Dataset
 
 The NSL-KDD dataset consists of a collection of records of network traffic, where each record has 41 features.
-You can download the dataset from the [NSL-KDD Dataset](https://linktodocumentation)
+You can download the dataset from the [NSL-KDD Dataset]([https://linktodocumentation](https://www.kaggle.com/datasets/hassan06/nslkdd))
 
 
-## Models
-
-The following machine learning models are implemented:
-
-- Random Forest Classifier
-- Support Vector Machine
-- Voting Classifier
 ## Models
 
 The following machine learning models are implemented:
