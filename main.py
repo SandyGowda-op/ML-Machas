@@ -10,7 +10,6 @@ from sklearn.ensemble import RandomForestClassifier, VotingClassifier
 from sklearn.svm import SVC
 from sklearn.metrics import accuracy_score, precision_score, recall_score, f1_score, confusion_matrix, make_scorer, classification_report
 from sklearn.impute import SimpleImputer
-import joblib
 
 # Column names for the NSL-KDD dataset
 col_names = ["duration", "protocol_type", "service", "flag", "src_bytes",
@@ -117,10 +116,6 @@ def RandomForest():
     plt.show()
 
 
-    # Save the RandomForest model
-    joblib.dump(rf_clf, 'random_forest_model.pkl')
-
-
 
 def SVM():
     # Train and evaluate the SVM model
@@ -144,11 +139,6 @@ def SVM():
     plt.ylabel("Actual")
     plt.title("Confusion Matrix Heatmap for Support Vector Machine on NSL-KDD (5 Main Categories)")
     plt.show()
-
-
-
-    # Save the SVM model
-    joblib.dump(svm_clf, 'svm_model.pkl')
 
 
 
@@ -176,8 +166,6 @@ def Ensembling():
     plt.show()
     
 
-    # Save the Voting Classifier
-    joblib.dump(voting_clf, 'voting_classifier_model.pkl')
 
 n = int(input("Choose your Machine Learning Model:\n1. Random Forest Classifier\n2. Support Vector Machine\n3. Voting Classifier\n4. All Models\nEnter Your Choice: " ))
 if n == 1:
